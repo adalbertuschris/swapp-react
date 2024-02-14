@@ -1,0 +1,22 @@
+.toolbar {
+  font-family: Roboto, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  background: #7b1fa2;
+  color: #ffffff;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  height: 64px;
+
+  @media (max-width: 599px) {
+    height: 56px;
+  }
+}

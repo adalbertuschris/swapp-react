@@ -1,5 +1,32 @@
 {
-  "main": {
-    "title": "Hello world!!!"
+  "app": {
+    "title": "Star Wars"
+  },
+  "cards": {
+    "title": "Cards",
+    "people": {
+      "title": "People",
+      "eye_color": "Eye color",
+      "gender": "Gender",
+      "mass": "Mass"
+    },
+    "starships": {
+      "title": "Starships",
+      "crew": "Crew",
+      "length": "Length",
+      "starship_class": "Starship class"
+    }
+  },
+  "home": {
+    "title": "Welcome"
+  },
+  "general": {
+    "play": "Play",
+    "score": "Score",
+    "win": "Win"
+  },
+  "players": {
+    "player_1": "Player 1",
+    "computer": "Computer"
   }
 }

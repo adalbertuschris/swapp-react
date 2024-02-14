@@ -1,5 +1,32 @@
 {
-  "main": {
-    "title": "Witaj świecie!!!"
+  "app": {
+    "title": "Star Wars"
+  },
+  "cards": {
+    "title": "Karty",
+    "people": {
+      "title": "Postaci",
+      "eye_color": "Kolor oczu",
+      "gender": "Płeć",
+      "mass": "Masa"
+    },
+    "starships": {
+      "title": "Statki",
+      "crew": "Załoga",
+      "length": "Długość",
+      "starship_class": "Klasa statku"
+    }
+  },
+  "home": {
+    "title": "Witaj"
+  },
+  "general": {
+    "play": "Graj",
+    "score": "Wynik",
+    "win": "Wygrana"
+  },
+  "players": {
+    "player_1": "Gracz 1",
+    "computer": "Komputer"
   }
 }
