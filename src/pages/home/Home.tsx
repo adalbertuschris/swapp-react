@@ -14,12 +14,20 @@ function Home() {
 
         <ul className={classes["game-list"]}>
           <li className={classes["game-list-item"]}>
-            <Link data-test="resource-link" to="/cards/people">
+            <Link
+              data-test="resource-link"
+              to="/cards/people"
+              className="button link"
+            >
               {t("cards.people.title")}
             </Link>
           </li>
           <li className={classes["game-list-item"]}>
-            <Link data-test="resource-link" to="/cards/starships">
+            <Link
+              data-test="resource-link"
+              to="/cards/starships"
+              className="button link"
+            >
               {t("cards.starships.title")}
             </Link>
           </li>

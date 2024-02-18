@@ -11,6 +11,8 @@ const repository = {
 function PeoplePage() {
   return (
     <CardsGame
+      resource="people"
+      titleKey="cards.people.title"
       repository={repository}
       compare={comparePeople}
       map={mapPeople}

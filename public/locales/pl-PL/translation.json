@@ -6,7 +6,7 @@
     "title": "Karty",
     "people": {
       "title": "Postaci",
-      "eye_color": "Kolor oczu",
+      "eyeColor": "Kolor oczu",
       "gender": "Płeć",
       "mass": "Masa"
     },
@@ -26,7 +26,7 @@
     "win": "Wygrana"
   },
   "players": {
-    "player_1": "Gracz 1",
+    "player1": "Gracz 1",
     "computer": "Komputer"
   }
 }
