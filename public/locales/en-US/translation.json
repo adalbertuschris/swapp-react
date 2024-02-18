@@ -14,7 +14,7 @@
       "title": "Starships",
       "crew": "Crew",
       "length": "Length",
-      "starship_class": "Starship class"
+      "starshipClass": "Starship class"
     }
   },
   "home": {

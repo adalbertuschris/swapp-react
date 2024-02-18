@@ -14,7 +14,7 @@
       "title": "Statki",
       "crew": "Załoga",
       "length": "Długość",
-      "starship_class": "Klasa statku"
+      "starshipClass": "Klasa statku"
     }
   },
   "home": {
