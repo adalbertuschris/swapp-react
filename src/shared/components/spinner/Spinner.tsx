@@ -7,6 +7,7 @@ type SpinnerProps = {
 function Spinner({ className }: SpinnerProps) {
   return (
     <div
+      data-test="spinner"
       className={`${classes["spinner-container"]} ${
         className ? className : ""
       }`}

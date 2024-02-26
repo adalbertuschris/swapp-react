@@ -12,7 +12,7 @@ function Card({ card }: CardProps) {
   const cardProperties = Object.values(card.properties);
 
   return (
-    <div className={classes["card"]}>
+    <div data-test="card" className={classes["card"]}>
       <div className={classes["card-header"]}>
         <div className={classes["card-title"]}>{card.title}</div>
         {card?.subtitle && (

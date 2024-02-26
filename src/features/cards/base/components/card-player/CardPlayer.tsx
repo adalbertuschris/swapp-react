@@ -33,11 +33,11 @@ function CardPlayer({ name, player, isLoading }: CardPlayerProps) {
         {t("general.score")}: {player.score}
       </h4>
 
-      <div className={classes["card-container"]}>
+      <div data-test="card-container" className={classes["card-container"]}>
         {isLoading ? (
-          <Spinner data-test="card-spinner" className={classes["spinner"]} />
+          <Spinner className={classes["spinner"]} />
         ) : player.card ? (
-          <Card data-test="card" card={player.card} />
+          <Card card={player.card} />
         ) : (
           <div></div>
         )}
