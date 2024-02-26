@@ -11,6 +11,7 @@ export const mapStarship = (model: StarshipDetailResult): Card => {
 
   return {
     title: model.name,
+    subtitle: model.model,
     properties: cardPropertyKeys.reduce(
       (prev, key: StarshipProps) => ({
         ...prev,
