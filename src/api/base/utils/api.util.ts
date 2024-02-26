@@ -1,16 +1,13 @@
-export const handleResponse = async <T>(
+export const handleResponse = async <T, R>(
   action: Promise<Response>,
-  adapter?: (data: Promise<T>) => T
+  adapter?: (data: T) => R
 ) => {
-  try {
-    const response = await action;
+  const response = await action;
 
-    if (!response.ok) {
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-
-    return response.ok && adapter(await response.json());
-  } catch (error) {
-    console.log(error);
+  if (!response.ok) {
+    throw new Error(`${response.status} ${response.statusText}`);
   }
+
+  const result = await response.json();
+  return adapter ? adapter(result) : result;
 };
