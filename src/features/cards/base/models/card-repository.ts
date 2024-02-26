@@ -8,5 +8,5 @@ export type CardRepository = {
     options?: ApiOptions
   ): Promise<CollectionResult>;
   get<R>(id: number, options?: ApiOptions): Promise<R>;
-  get(id: number): Promise<unknown>;
+  get(id: number, options?: ApiOptions): Promise<unknown>;
 };

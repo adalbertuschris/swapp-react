@@ -21,7 +21,7 @@ const getCard = async (
   if (itemId && !isNaN(+itemId)) {
     return cardRepository.get(+itemId, { cancel: signal });
   } else {
-    return Promise.reject("No item");
+    return Promise.reject(new Error("No item"));
   }
 };
 
@@ -66,6 +66,10 @@ export const draw = async (
   });
 
   const totalPages = (await totalPagesRequest)?.totalPages;
+
+  if (!totalPages) {
+    return Promise.reject(new Error("No items"));
+  }
 
   return Promise.all([
     drawCard(resource, cardRepository, totalPages),
