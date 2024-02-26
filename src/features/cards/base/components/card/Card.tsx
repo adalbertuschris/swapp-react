@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { Card } from "../../models/card";
+import { Card as CardInfo } from "../../models/card";
 import classes from "./Card.module.css";
 
 type CardProps = {
-  card: Card;
+  card: CardInfo;
 };
 
 function Card({ card }: CardProps) {

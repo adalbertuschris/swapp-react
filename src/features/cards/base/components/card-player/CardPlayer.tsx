@@ -1,12 +1,12 @@
 import { useTranslation } from "react-i18next";
-import { CardPlayer } from "../../models/card-player";
+import { CardPlayer as CardPlayerDetail } from "../../models/card-player";
 import classes from "./CardPlayer.module.css";
 import Card from "../card/Card";
 import Spinner from "../../../../../shared/components/spinner/Spinner";
 
 type CardPlayerProps = {
   name: string;
-  player: CardPlayer;
+  player: CardPlayerDetail;
   isLoading: boolean;
 };
 
