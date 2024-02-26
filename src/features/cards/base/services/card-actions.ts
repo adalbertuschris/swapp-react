@@ -37,6 +37,19 @@ const getTotalPages = (
     { cancel: signal }
   );
 
+const drawCard = (
+  resource: string,
+  cardRepository: CardRepository,
+  totalPages: number
+) => {
+  const cardPageIndex = getRandom(1, totalPages);
+
+  return queryClient.fetchQuery({
+    queryKey: [resource, cardPageIndex],
+    queryFn: ({ signal }) => getCard(cardPageIndex, cardRepository, signal),
+  });
+};
+
 export const draw = async (
   resource: string,
   cardRepository: CardRepository,
@@ -54,18 +67,8 @@ export const draw = async (
 
   const totalPages = (await totalPagesRequest)?.totalPages;
 
-  const cardPageIndex1 = getRandom(1, totalPages);
-  const cardPageIndex2 = getRandom(1, totalPages);
-
-  const card1Request = queryClient.fetchQuery({
-    queryKey: [resource, cardPageIndex1],
-    queryFn: ({ signal }) => getCard(cardPageIndex1, cardRepository, signal),
-  });
-
-  const card2Request = queryClient.fetchQuery({
-    queryKey: [resource, cardPageIndex2],
-    queryFn: ({ signal }) => getCard(cardPageIndex2, cardRepository, signal),
-  });
-
-  return Promise.all([card1Request, card2Request]);
+  return Promise.all([
+    drawCard(resource, cardRepository, totalPages),
+    drawCard(resource, cardRepository, totalPages),
+  ]);
 };
