@@ -8,7 +8,6 @@
 }
 
 .card .card-header {
-  display: flex;
   padding: 16px 16px 0;
 }
 
@@ -21,6 +20,10 @@
   padding-top: 0;
   display: block;
   margin: 0;
+}
+
+.card .card-subtitle {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .card .card-content {
