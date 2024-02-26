@@ -7,7 +7,6 @@ import {
   vi,
   MockInstance,
 } from "vitest";
-
 import { getRandom } from "../../utils/number.util";
 
 describe("getRandom", () => {
