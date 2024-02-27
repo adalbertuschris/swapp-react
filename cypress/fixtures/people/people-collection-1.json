@@ -1,0 +1,13 @@
+{
+  "message": "ok",
+  "total_records": 82,
+  "total_pages": 82,
+  "previous": null,
+  "results": [
+    {
+      "uid": "1",
+      "name": "Nute Gunray",
+      "url": "https://www.swapi.tech/api/people/1"
+    }
+  ]
+}

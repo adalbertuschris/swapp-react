@@ -1,0 +1,13 @@
+{
+  "message": "ok",
+  "total_records": 82,
+  "total_pages": 82,
+  "previous": null,
+  "results": [
+    {
+      "uid": "2",
+      "name": "Darth Maul",
+      "url": "https://www.swapi.tech/api/people/2"
+    }
+  ]
+}

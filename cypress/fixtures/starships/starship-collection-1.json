@@ -1,0 +1,13 @@
+{
+  "message": "ok",
+  "total_records": 36,
+  "total_pages": 36,
+  "previous": null,
+  "results": [
+    {
+      "uid": "1",
+      "name": "Scimitar",
+      "url": "https://www.swapi.tech/api/starships/1"
+    }
+  ]
+}

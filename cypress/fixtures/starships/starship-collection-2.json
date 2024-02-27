@@ -1,0 +1,13 @@
+{
+  "message": "ok",
+  "total_records": 36,
+  "total_pages": 36,
+  "previous": null,
+  "results": [
+    {
+      "uid": "2",
+      "name": "Theta-class T-2c shuttle",
+      "url": "https://www.swapi.tech/api/starships/2"
+    }
+  ]
+}

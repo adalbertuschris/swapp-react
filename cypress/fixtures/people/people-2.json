@@ -1,0 +1,23 @@
+{
+  "message": "ok",
+  "result": {
+    "properties": {
+      "height": "175",
+      "mass": "80",
+      "hair_color": "none",
+      "skin_color": "red",
+      "eye_color": "yellow",
+      "birth_year": "54BBY",
+      "gender": "male",
+      "created": "2023-10-24T04:34:41.546Z",
+      "edited": "2023-10-24T04:34:41.546Z",
+      "name": "Darth Maul",
+      "homeworld": "https://www.swapi.tech/api/planets/36",
+      "url": "https://www.swapi.tech/api/people/2"
+    },
+    "description": "A person within the Star Wars universe",
+    "_id": "5f63a36fee9fd7000499be6c",
+    "uid": "2",
+    "__v": 0
+  }
+}
