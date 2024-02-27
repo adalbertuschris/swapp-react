@@ -1,4 +1,3 @@
-/*eslint-disable  @typescript-eslint/naming-convention*/
 export type DetailApiResult<TProperties> = {
   message: string;
   result: {

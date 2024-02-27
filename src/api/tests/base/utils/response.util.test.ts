@@ -1,7 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { mapResponseToCamelCase } from "../../../base/utils/response.util";
 
-/*eslint-disable @typescript-eslint/naming-convention*/
 describe("mapResponseToCamelCase", () => {
   it("return null when object is null", () => {
     const obj = null;
