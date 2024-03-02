@@ -1,10 +1,10 @@
+import { setDefaultBrowserLanguage } from "../support";
+
 describe("People cards", () => {
   beforeEach(() => {
     cy.visit("cards/people", {
       onBeforeLoad(win) {
-        Object.defineProperty(win.navigator, "languages", {
-          value: ["en-US"],
-        });
+        setDefaultBrowserLanguage(win);
       },
     });
     cy.get("[data-test=play-button]").as("playBtn");

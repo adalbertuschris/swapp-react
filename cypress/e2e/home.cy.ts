@@ -1,10 +1,10 @@
+import { setDefaultBrowserLanguage } from "../support";
+
 describe("Home page", () => {
   beforeEach(() => {
     cy.visit("/", {
       onBeforeLoad(win) {
-        Object.defineProperty(win.navigator, "languages", {
-          value: ["en-US"],
-        });
+        setDefaultBrowserLanguage(win);
       },
     });
   });
